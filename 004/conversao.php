@@ -93,7 +93,7 @@
             <strong>" . numfmt_format_currency($padrão, $dolar, "USD") . 
             "</strong>
             </p>
-            <button onclick='javascript:history.go(-1)'>VOLTAR</button>
+            <button onclick='javascript:history.go(-1)'><strong>VOLTAR</strong></button>
             ";
     ?>
     </main>
