@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação</title>
+    <style>
+        body {
+            background-color: black;
+            color: blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+
+        }
+        .container {
+            width: 900px;
+            display: flex;
+        }
+
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        form {
+            text-align: center;
+            background-color: dimgray;
+            width: 500px;
+            height: auto;
+            padding: 50px 0px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        input {
+            background-color: dimgray;
+            border: none;
+            border-bottom: 2px solid #ffff;
+            width: 70%;
+            font-size: 80px;
+        }
+
+        input:focus {
+            border: none;
+            outline: none;
+            border-bottom: 4px solid #d4d4d4;
+        }
+        button {
+            border: none;
+            margin-top: 20px;
+            width: 30%;
+            height: auto;
+            background-color: rgb(24, 235, 24);
+        }
+
+    </style>   
+</head>
+<body>
+    <main class="container" style="margin-top: 100px;">
+        <h1>Conversor de Moedas</h1>
+        <form action="conversao.php" method="get">
+            <label for="din">Quanto em reais você deseja converter ?</label><br><br>
+            <input type="number" name="din" id="din" step="0.01">
+            <button type="submit" name="submit">Converter</button>
+        </form>
+    </main>
+</body>
+</html>
